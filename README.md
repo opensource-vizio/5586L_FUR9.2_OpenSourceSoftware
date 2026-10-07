@@ -1,5 +1,13 @@
 # 5586L\_FUR9.2\_OpenSourceSoftware
 
+## Identifiers
+|Item|Value
+|---|---
+|Chipset|5586L
+|Release|FUR9.2
+|FW Versions|86.920.X.Y
+|Download Link|https://d2mi77xcznxniv.cloudfront.net/index.html?file=5586L_FUR9.2.tar.gz
+
 ## Environment
 Individual build components may list different versions of Ubuntu for compilation in their respective README or build instruction files.
 However, all components were compiled successfully on Ubuntu 22.04 (jammy).
@@ -24,6 +32,6 @@ cd 5586L_FUR9.2
 
 Further instructions for the contents of the tarball can be found in its included README.
 
-Download the tarball here: 
+Download the source archive here: 
 https://d2mi77xcznxniv.cloudfront.net/index.html?file=5586L_FUR9.2.tar.gz
 
