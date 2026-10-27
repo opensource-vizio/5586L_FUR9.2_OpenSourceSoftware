@@ -35,3 +35,12 @@ Further instructions for the contents of the tarball can be found in its include
 Download the source archive here: 
 https://d2mi77xcznxniv.cloudfront.net/index.html?file=5586L_FUR9.2.tar.gz
 
+## Known Issues
+If your build environment has the libsndfile headers installed (`libsndfile1-dev` on Ubuntu), the libACR
+build may attempt to compile Pipewire with libsndfile support. This will likely fail. If you encounter this issue,
+simply explicitly disable this feature by running this sed command from the 5586L\_FUR9.2 directory:
+```
+sed -i "186s,^\(.*\)$,\1 -Dsndfile=disabled," build/libACR/relink_instructions/platforms/mtk/mtk5586hal/CMakeLists.txt
+```
+
+You can then re-run `./build.sh acr`.
